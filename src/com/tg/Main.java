@@ -9,9 +9,11 @@ public class Main {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
         // retrieve bean from spring container
-        Coach theCoach = context.getBean("myTrackCoach", Coach.class);
+        Coach theCoach = context.getBean("baseballCoach", Coach.class);
 
+        // call a method on the bean
         System.out.println(theCoach.getDailyWorkout());
+
         // close the context
         context.close();
     }
