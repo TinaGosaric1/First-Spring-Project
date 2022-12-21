@@ -9,13 +9,13 @@ public class Main {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
         // retrieve bean from spring container
-        FootballCoach theFCoach = context.getBean("myFootballCoach", FootballCoach.class);
+        Coach theCoach = context.getBean("myTrackCoach", Coach.class);
+        Coach alphaCoach = context.getBean("myTrackCoach", Coach.class);
 
-        // call methods on the bean
+        System.out.println("Is this the same object in memory? " + (boolean) (theCoach == alphaCoach));
 
-        System.out.println(theFCoach.getEmailAddress());
-        System.out.println(theFCoach.getTeam());
-        System.out.println(theFCoach.getDailyFortune());
+        System.out.println("Memory location: " + theCoach);
+        System.out.println("Memory location: " + alphaCoach);
 
         // close the context
         context.close();

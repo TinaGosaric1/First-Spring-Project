@@ -17,32 +17,15 @@
         <property name="printedLoggerLevel" value="FINE"/>
     </bean>
 
-    <!-- load the properties file -->
-    <context:property-placeholder location="classpath:sport.properties.txt"/>
-
     <!-- Define your beans here -->
 
     <bean id="myFortune" class="com.tg.HappyFortuneService">
     </bean>
 
-    <bean id="myBaseballCoach" class="com.tg.BaseballCoach">
+    <bean id="myTrackCoach" class="com.tg.TrackCoach"
+          scope="prototype"> <!-- scope="prototype": created objects have different memory space -->
         <!-- set up constructor injection -->
         <constructor-arg ref="myFortune"/>
-    </bean>
-
-    <bean id="myTrackCoach" class="com.tg.TrackCoach">
-        <!-- set up constructor injection -->
-        <constructor-arg ref="myFortune"/>
-    </bean>
-
-    <bean id="myFootballCoach" class="com.tg.FootballCoach">
-        <!-- set up setter injection -->
-        <!-- with name="fortuneService" we automatically call "setFortuneService()" method -->
-        <property name="fortuneService" ref="myFortune"/>
-
-        <!-- inject literal values -->
-        <property name="emailAddress" value="${myProperty.email}"/> <!-- with this name, we call "setEmailAddress()" -->
-        <property name="team" value="${myProperty.team}"/> <!-- with this name, we call "setTeam()" -->
     </bean>
 
 </beans>
