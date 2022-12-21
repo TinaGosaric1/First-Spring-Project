@@ -18,12 +18,30 @@
     </bean>
 
     <!-- Define your beans here -->
-    <bean id="myCoach1" class="com.tg.BaseballCoach">
 
+    <!-- define the dependency -->
+
+    <bean id="myFortune" class="com.tg.HappyFortuneService">
     </bean>
 
-    <bean id="myCoach2" class="com.tg.FootballCoach">
+    <bean id="myBaseballCoach" class="com.tg.BaseballCoach">
+        <!-- set up constructor injection -->
+        <constructor-arg ref="myFortune"/>
+    </bean>
 
+    <bean id="myTrackCoach" class="com.tg.TrackCoach">
+        <!-- set up constructor injection -->
+        <constructor-arg ref="myFortune"/>
+    </bean>
+
+    <bean id="myFootballCoach" class="com.tg.FootballCoach">
+        <!-- set up setter injection -->
+        <!-- with name="fortuneService" we automatically call "setFortuneService()" method -->
+        <property name="fortuneService" ref="myFortune"/>
+
+        <!-- inject literal values -->
+        <property name="emailAddress" value="mojEmail@gmail.com"/> <!-- with this name, we call "setEmailAddress()" -->
+        <property name="team" value="theChihuahuaDogs"/> <!-- with this name, we call "setTeam()" -->
     </bean>
 
 </beans>
