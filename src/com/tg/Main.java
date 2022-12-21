@@ -9,8 +9,8 @@ public class Main {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
         // retrieve bean from spring container
-        Coach theBCoach = context.getBean("myBaseballCoach", Coach.class);
-        Coach theTCoach = context.getBean("myTrackCoach", Coach.class);
+        BaseballCoach theBCoach = context.getBean("myBaseballCoach", BaseballCoach.class);
+        TrackCoach theTCoach = context.getBean("myTrackCoach", TrackCoach.class);
         FootballCoach theFCoach = context.getBean("myFootballCoach", FootballCoach.class);
 
         // call methods on the bean
