@@ -1,0 +1,2 @@
+myProperty.email = elinaTina@email.com
+myProperty.team = Eli's Sisters

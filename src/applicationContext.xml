@@ -17,9 +17,10 @@
         <property name="printedLoggerLevel" value="FINE"/>
     </bean>
 
-    <!-- Define your beans here -->
+    <!-- load the properties file -->
+    <context:property-placeholder location="classpath:sport.properties.txt"/>
 
-    <!-- define the dependency -->
+    <!-- Define your beans here -->
 
     <bean id="myFortune" class="com.tg.HappyFortuneService">
     </bean>
@@ -40,8 +41,8 @@
         <property name="fortuneService" ref="myFortune"/>
 
         <!-- inject literal values -->
-        <property name="emailAddress" value="mojEmail@gmail.com"/> <!-- with this name, we call "setEmailAddress()" -->
-        <property name="team" value="theChihuahuaDogs"/> <!-- with this name, we call "setTeam()" -->
+        <property name="emailAddress" value="${myProperty.email}"/> <!-- with this name, we call "setEmailAddress()" -->
+        <property name="team" value="${myProperty.team}"/> <!-- with this name, we call "setTeam()" -->
     </bean>
 
 </beans>
