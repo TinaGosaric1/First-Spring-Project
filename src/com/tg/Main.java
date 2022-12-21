@@ -9,10 +9,12 @@ public class Main {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
         // retrieve bean from spring container
-        Coach theCoach = context.getBean("baseballCoach", Coach.class);
+        Coach theCoach = context.getBean("baseballCoach", Coach.class); // default name (bean id) is the class name with lower first letter
 
         // call a method on the bean
         System.out.println(theCoach.getDailyWorkout());
+
+        System.out.println(theCoach.getDailyFortune());
 
         // close the context
         context.close();
