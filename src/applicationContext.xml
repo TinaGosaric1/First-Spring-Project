@@ -22,8 +22,7 @@
     <bean id="myFortune" class="com.tg.HappyFortuneService">
     </bean>
 
-    <bean id="myTrackCoach" class="com.tg.TrackCoach"
-          scope="prototype"> <!-- scope="prototype": created objects have different memory space -->
+    <bean id="myTrackCoach" class="com.tg.TrackCoach" init-method="doMyStartupStuff" destroy-method="doMyCleanupStuff">
         <!-- set up constructor injection -->
         <constructor-arg ref="myFortune"/>
     </bean>

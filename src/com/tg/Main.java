@@ -10,13 +10,8 @@ public class Main {
 
         // retrieve bean from spring container
         Coach theCoach = context.getBean("myTrackCoach", Coach.class);
-        Coach alphaCoach = context.getBean("myTrackCoach", Coach.class);
 
-        System.out.println("Is this the same object in memory? " + (boolean) (theCoach == alphaCoach));
-
-        System.out.println("Memory location: " + theCoach);
-        System.out.println("Memory location: " + alphaCoach);
-
+        System.out.println(theCoach.getDailyWorkout());
         // close the context
         context.close();
     }
