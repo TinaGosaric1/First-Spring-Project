@@ -6,16 +6,11 @@ import org.springframework.stereotype.Component;
 @Component // now we use default bean id, in this case baseballCoach (lower first letter)
 public class BaseballCoach implements Coach {
 
+    @Autowired
     private FortuneService fortuneService;
 
     public BaseballCoach() {
         System.out.println(">>> BaseballCoach: inside the default constructor");
-    }
-
-    @Autowired
-    public void setFortuneService(FortuneService fortuneService) {
-        System.out.println(">>> BaseballCoach: inside the setFortuneService() method");
-        this.fortuneService = fortuneService;
     }
 
     @Override
