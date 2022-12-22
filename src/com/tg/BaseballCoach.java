@@ -8,8 +8,13 @@ public class BaseballCoach implements Coach {
 
     private FortuneService fortuneService;
 
+    public BaseballCoach() {
+        System.out.println(">>> BaseballCoach: inside the default constructor");
+    }
+
     @Autowired
-    public BaseballCoach(FortuneService fortuneService) {
+    public void setFortuneService(FortuneService fortuneService) {
+        System.out.println(">>> BaseballCoach: inside the setFortuneService() method");
         this.fortuneService = fortuneService;
     }
 
