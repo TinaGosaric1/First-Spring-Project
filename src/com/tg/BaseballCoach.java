@@ -6,14 +6,16 @@ import org.springframework.stereotype.Component;
 
 @Component // now we use default bean id, in this case baseballCoach (lower first letter)
 public class BaseballCoach implements Coach {
-
-    // we have two implementations of the FortuneService and now we have to specify which one we want to use
-    @Autowired
-    @Qualifier("randomService") // class name + lower first letter
     private FortuneService fortuneService;
 
     public BaseballCoach() {
         System.out.println(">>> BaseballCoach: inside the default constructor");
+    }
+
+    @Autowired
+    public BaseballCoach(@Qualifier("randomFortuneService") FortuneService fortuneService) {
+        System.out.println(">> BaseballCoach: inside constructor using autowired and qualifier");
+        this.fortuneService = fortuneService;
     }
 
     @Override
