@@ -21,6 +21,9 @@
 
     <context:component-scan base-package="com.tg"/>
 
+    <!-- load the properties file -->
+    <context:property-placeholder location="classpath:sport.properties"/>
+
 </beans>
 
 
