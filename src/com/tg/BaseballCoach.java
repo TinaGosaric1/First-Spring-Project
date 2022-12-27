@@ -12,9 +12,10 @@ public class BaseballCoach implements Coach {
         System.out.println(">>> BaseballCoach: inside the default constructor");
     }
 
+    // qualifier + setter injection
     @Autowired
-    public BaseballCoach(@Qualifier("randomFortuneService") FortuneService fortuneService) {
-        System.out.println(">> BaseballCoach: inside constructor using autowired and qualifier");
+    @Qualifier("randomFortuneService")
+    public void setFortuneService(FortuneService fortuneService) {
         this.fortuneService = fortuneService;
     }
 
