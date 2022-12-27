@@ -11,9 +11,8 @@ public class RandomFortuneService implements FortuneService {
     private Random myRandom = new Random();
 
     public RandomFortuneService() {
-        fortunes.add("Today is your lucky day!");
-        fortunes.add("Your dog loves you <3");
-        fortunes.add("No Java next week (only C++)");
+        fortunes.add("From RandomFortuneService - Today is your lucky day!");
+        fortunes.add("From RandomFortuneService - Your dog loves you <3");
     }
 
     @Override
