@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65a4c1ea-79c8-49dc-8f4c-90b980ee07ba" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tg/BaseballCoach.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tg/Coach.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tg/Coach.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tg/FileFortuneService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tg/FortuneService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tg/FortuneService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tg/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tg/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tg/MyLoggerConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tg/RandomFortuneService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fortune-data.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sport.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tg/TennisCoach.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tg/TennisCoach.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

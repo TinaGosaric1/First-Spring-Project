@@ -2,11 +2,12 @@ package com.tg;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 @Component
-@Scope("prototype") // creates new instance every time
 public class TennisCoach implements Coach {
 
     private FortuneInterface fortuneInterface;
@@ -24,5 +25,17 @@ public class TennisCoach implements Coach {
     @Override
     public String getDailyFortune() {
         return fortuneInterface.getFortune();
+    }
+
+    // this method will execute after constructor and injection of dependencies
+    @PostConstruct
+    public void startup() {
+        System.out.println("Inside PostConstruct.");
+    }
+
+    // this method will execute before the bean is destroyed
+    @PreDestroy
+    public void cleanup() {
+        System.out.println("Inside PreDestroy.");
     }
 }
