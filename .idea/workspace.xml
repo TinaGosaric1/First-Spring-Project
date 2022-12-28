@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="65a4c1ea-79c8-49dc-8f4c-90b980ee07ba" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tg/BaseballCoach.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tg/Coach.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tg/Coach.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tg/FileFortuneService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tg/FortuneService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tg/FortuneService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tg/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tg/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tg/MyLoggerConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tg/RandomFortuneService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fortune-data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sport.properties" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2JVeEuxHB8NoGV6nTM4LGeHie7g" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/tina.gosaric/Desktop/Learning/0 JAVA/Projects/First-Spring-Project/lib/javax.annotation-api-1.3.2.jar&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tina.gosaric\Desktop\Learning\0 JAVA\Projects\First-Spring-Project\lib" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tina.gosaric\Desktop\Learning\0 JAVA\Projects\First-Spring-Project\lib" />
+      <recent name="C:\Users\tina.gosaric\Desktop\Learning\0 JAVA\Projects\First-Spring-Project\src" />
+      <recent name="C:\Users\tina.gosaric\Desktop\Learning\0 JAVA\Projects\First-Spring-Project" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="65a4c1ea-79c8-49dc-8f4c-90b980ee07ba" name="Changes" comment="" />
+      <created>1672167572025</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1672167572025</updated>
+      <workItem from="1672167573582" duration="8510000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

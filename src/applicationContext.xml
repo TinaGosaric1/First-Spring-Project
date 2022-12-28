@@ -7,26 +7,8 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <!--
-		Add a logger config to see logging messages.
-		- For more detailed logs, set values to "FINEST"
-		- For info on logging levels, see: http://www.vogella.com/tutorials/Logging/article.html
-	 -->
-    <bean id="myLoggerConfig" class="com.tg.MyLoggerConfig" init-method="initLogger">
-        <property name="rootLoggerLevel" value="FINE"/>
-        <property name="printedLoggerLevel" value="FINE"/>
-    </bean>
-
-    <!-- Define your beans here -->
+    <!-- Enable component scanning -->
 
     <context:component-scan base-package="com.tg"/>
 
-    <!-- load the properties file -->
-    <context:property-placeholder location="classpath:sport.properties"/>
-
 </beans>
-
-
-
-
-

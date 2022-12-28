@@ -4,19 +4,15 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Main {
     public static void main(String[] args) {
-
-        // load the spring configuration file
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
-        // retrieve bean from spring container
-        Coach theCoach = context.getBean("baseballCoach", Coach.class); // default name (bean id) is the class name with lower first letter
+        Coach theCoach1 = context.getBean("tennisCoach", Coach.class);
+        Coach theCoach2 = context.getBean("tennisCoach", Coach.class);
 
-        // call a method on the bean
-        System.out.println(theCoach.getDailyWorkout());
+        System.out.println(theCoach1 == theCoach2);
+        System.out.println("Memory location for theCoach1: " + theCoach1);
+        System.out.println("Memory location for theCoach2: " + theCoach2);
 
-        System.out.println(theCoach.getDailyFortune());
-
-        // close the context
         context.close();
     }
 }

@@ -3,10 +3,10 @@ package com.tg;
 import org.springframework.stereotype.Component;
 
 @Component
-public class FortuneService implements FortuneInterface {
+public class TestFortuneService implements FortuneInterface {
 
     @Override
     public String getFortune() {
-        return "Today is your lucky day!";
+        return "Wrong fortune";
     }
 }
