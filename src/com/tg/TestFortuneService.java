@@ -1,8 +1,5 @@
 package com.tg;
 
-import org.springframework.stereotype.Component;
-
-@Component
 public class TestFortuneService implements FortuneInterface {
 
     @Override

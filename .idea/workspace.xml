@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65a4c1ea-79c8-49dc-8f4c-90b980ee07ba" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/tg/SportConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sport.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tg/FortuneService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tg/FortuneService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tg/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tg/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tg/SportConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tg/SportConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tg/TennisCoach.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tg/TennisCoach.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tg/TestCoach.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tg/TestCoach.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tg/TestFortuneService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tg/TestFortuneService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

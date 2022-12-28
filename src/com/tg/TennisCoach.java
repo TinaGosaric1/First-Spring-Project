@@ -1,19 +1,16 @@
 package com.tg;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.stereotype.Component;
+import org.springframework.beans.factory.annotation.Value;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
-
-@Component
 public class TennisCoach implements Coach {
 
     private FortuneInterface fortuneInterface;
+    @Value("${myVar.email}")
+    private String email;
+    @Value("${myVar.team}")
+    private String team;
 
-    @Autowired
-    public TennisCoach(@Qualifier("fortuneService") FortuneInterface fortuneInterface) {
+    public TennisCoach(FortuneInterface fortuneInterface) {
         this.fortuneInterface = fortuneInterface;
     }
 
@@ -27,15 +24,11 @@ public class TennisCoach implements Coach {
         return fortuneInterface.getFortune();
     }
 
-    // this method will execute after constructor and injection of dependencies
-    @PostConstruct
-    public void startup() {
-        System.out.println("Inside PostConstruct.");
+    public String getEmail() {
+        return email;
     }
 
-    // this method will execute before the bean is destroyed
-    @PreDestroy
-    public void cleanup() {
-        System.out.println("Inside PreDestroy.");
+    public String getTeam() {
+        return team;
     }
 }

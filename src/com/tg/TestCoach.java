@@ -1,16 +1,10 @@
 package com.tg;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.stereotype.Component;
-
-@Component
 public class TestCoach implements Coach {
 
     private FortuneInterface fortuneInterface;
 
-    @Autowired
-    public TestCoach(@Qualifier("testFortuneService") FortuneInterface fortuneInterface) {
+    public TestCoach(FortuneInterface fortuneInterface) {
         this.fortuneInterface = fortuneInterface;
     }
 
